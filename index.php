@@ -14,6 +14,7 @@
         <input type="date" name="data_nasc" id="data_nasc" required>
         
         <input type="submit" value="Enviar">
+        
     </form>
 </body>
 </html>
