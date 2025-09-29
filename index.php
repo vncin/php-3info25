@@ -6,12 +6,12 @@
     <title>Meu primeiro PHP</title>
 </head>
 <body>  
-    <form action="calcula.php" method="POST">
-        <label for="numero">Numero: </label>
-        <input type="text" name="numero" id="numero" required>
+    <form action="cadastra_aluno.php" method="POST">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" required>
 
-        <label for="numero2">Numero 2: </label>
-        <input type="text" name="numero2" id="numero2" required>
+        <label for="data_nasc">Data de Nascimento: </label>
+        <input type="date" name="data_nasc" id="data_nasc" required>
         
         <input type="submit" value="Enviar">
     </form>
