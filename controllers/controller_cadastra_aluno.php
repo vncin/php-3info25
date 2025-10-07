@@ -8,4 +8,9 @@ $data_nasc = $_POST['data_nasc'];
 $sqlInsert = "INSERT INTO aluno(nome, data_nasc) 
 VALUES('$nome', '$data_nasc')";
 
-$pdo->exec($sqlInsert);
+if($pdo->exec($sqlInsert)){
+    header("Location: ../index.php?sucesso=1");
+}else{
+    header("Location: ../index.php?sucesso=0");
+}
+

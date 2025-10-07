@@ -41,6 +41,29 @@ label, input{
 input[type="text"], input[type="date"]{
     height: 6vh;
 }
+
+.msg-retorno-sucesso{
+    margin-top: 1%;
+    color: black;
+    width: 40%;
+    background-color: green;
+    border-radius: 5px;
+    padding: 1%;
+    align-self: center;
+    opacity: 1;
+    animation: ocultarApos3s 3s forwards;
+}
+.msg-retorno-erro{
+    margin-top: 1%;
+    color: black;
+    width: 40%;
+    background-color: rgb(238, 25, 1);
+    border-radius: 5px;
+    padding: 1%;
+    align-self: center;
+    opacity: 1;
+    animation: ocultarApos3s 3s forwards;
+}
 .principal-link-lista{
     text-decoration: none;
     color: black;
@@ -56,4 +79,13 @@ input[type="text"], input[type="date"]{
     align-items: center;
     align-self: center;
     border-radius: 10px;
+}
+
+@keyframes ocultarApos3s {
+  from { /* O estado inicial da animação */
+    opacity: 1; /* O elemento está totalmente visível */
+  }
+  to { /* O estado final da animação */
+    opacity: 0; /* O elemento está totalmente transparente */
+  }
 }

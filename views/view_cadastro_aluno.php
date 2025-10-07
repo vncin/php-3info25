@@ -17,6 +17,16 @@
             <input type="date" name="data_nasc" id="data_nasc" required>
 
             <input type="submit" value="Enviar" class="btn-enviar">
+        <?php 
+            if(isset($_GET['sucesso'])){
+                if($_GET['sucesso'] == 1){
+                    echo "<p class='msg-retorno-sucesso'> Cadastro realizado com sucesso! </p>";
+                }else{
+                    echo "<p class='msg-retorno-erro'> Erro na realização do cadastro! </p>";
+                }
+            }
+            
+        ?>
         </form>
         <a href="/php-3info25/controllers/controller_lista_alunos.php" class="principal-link-lista">Lista de Alunos</a>
     </section>
