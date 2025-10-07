@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="views/css/style_cadastro_aluno.css">
-    <title>Meu primeiro PHP</title>
+    <title>Alunos - Emails</title>
 </head>
 
 <body>
@@ -17,8 +17,8 @@
             <input type="date" name="data_nasc" id="data_nasc" required>
 
             <input type="submit" value="Enviar" class="btn-enviar">
-
         </form>
+        <a href="/php-3info25/controllers/controller_lista_alunos.php" class="principal-link-lista">Lista de Alunos</a>
     </section>
 </body>
 
