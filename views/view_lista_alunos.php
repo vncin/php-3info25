@@ -15,11 +15,14 @@
                 <th>Data de Nascimento</th>
             </thead>
             <tbody>
+                <?php
+                foreach($resultListaAlunos as $aluno){ ?>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><?= htmlspecialchars($aluno['id_aluno']) ?> </td>
+                    <td><?= htmlspecialchars($aluno['nome']) ?></td>
+                    <td><?= htmlspecialchars($aluno['data_nasc']) ?></td>
                 </tr>
+                <?php } ?>
             </tbody>
         </table>
 
