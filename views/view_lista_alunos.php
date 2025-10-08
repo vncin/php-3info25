@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_lista_alunos.css">
+    <link rel="stylesheet" href="/php-3info25/views/css/style_lista_alunos.css">
     <title>Lista de Alunos</title>
 </head>
 <body>
     <section class="principal">
+        <a href="../index.php" class="btn-voltar">Voltar</a>
         <table class="principal-tabela">
             <thead>
                 <th>ID Aluno</th>
                 <th>Nome </th>
                 <th>Data de Nascimento</th>
+                <th>Ação</th>
             </thead>
             <tbody>
                 <?php
@@ -21,6 +23,10 @@
                     <td><?= htmlspecialchars($aluno['id_aluno']) ?> </td>
                     <td><?= htmlspecialchars($aluno['nome']) ?></td>
                     <td><?= htmlspecialchars($aluno['data_nasc']) ?></td>
+                    <td class="coluna-acoes"> 
+                        <a href="" class="btn-editar">Editar</a>
+                        <a href="" class="btn-deletar">Deletar</a>
+                    </td>
                 </tr>
                 <?php } ?>
             </tbody>
