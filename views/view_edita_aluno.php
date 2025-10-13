@@ -19,8 +19,8 @@
         ?>
         <h1 class="titulo">Editar Aluno</h1>
         <form action="/php-3info25/controllers/controller_atualiza_aluno.php" method="POST" class="principal-form">
-            <input type="hidden" name="id_aluno" >
-            
+            <input type="hidden" name="id_aluno" value="<?= $aluno['id_aluno']?>" >
+
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome" required value="<?= $aluno['nome']?>"> 
 
