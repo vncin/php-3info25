@@ -80,7 +80,13 @@ input[type="text"], input[type="date"]{
     align-self: center;
     border-radius: 10px;
 }
-
+/* Pagina de edição */
+.titulo{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 25pt;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 @keyframes ocultarApos3s {
   from { /* O estado inicial da animação */
     opacity: 1; /* O elemento está totalmente visível */

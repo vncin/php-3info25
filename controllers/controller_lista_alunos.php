@@ -2,7 +2,7 @@
 
 require "../config/db_connect.php";
 
-$selecionaAlunos = "SELECT * FROM aluno";
+$selecionaAlunos = "SELECT * FROM aluno ORDER BY nome ASC";
 
 $result = $pdo->query($selecionaAlunos);
 

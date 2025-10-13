@@ -24,7 +24,7 @@
                     <td><?= htmlspecialchars($aluno['nome']) ?></td>
                     <td><?= htmlspecialchars($aluno['data_nasc']) ?></td>
                     <td class="coluna-acoes"> 
-                        <a href="" class="btn-editar">Editar</a>
+                        <a href="/php-3info25/views/view_edita_aluno.php?id_aluno=<?= $aluno['id_aluno']?>" class="btn-editar">Editar</a>
                         <a href="" class="btn-deletar">Deletar</a>
                     </td>
                 </tr>
