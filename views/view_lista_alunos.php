@@ -10,7 +10,7 @@
 
 <body>
     <section class="principal">
-        <a href="../index.php" class="btn-voltar">Voltar</a>
+        <a href="/php-3info25/views/view_cadastro_aluno.php" class="btn-voltar">Voltar</a>
         <table class="principal-tabela">
             <thead>
                 <th>ID Aluno</th>

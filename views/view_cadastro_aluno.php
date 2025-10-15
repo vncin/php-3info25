@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="views/css/style_cadastro_aluno.css">
+    <link rel="stylesheet" href="/php-3info25/views/css/style_cadastro_aluno.css">
     <title>Alunos - Emails</title>
 </head>
 
 <body>
     <section class="principal">
+        <?php 
+            session_start();
+            echo "<h2>".$_SESSION['nome_usuario']."</h2>";        
+        ?>
         <form action="/php-3info25/controllers/controller_cadastra_aluno.php" method="POST" class="principal-form">
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome" required>
