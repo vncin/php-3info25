@@ -9,8 +9,8 @@ $sqlInsert = "INSERT INTO aluno(nome, data_nasc, situacao)
 VALUES('$nome', '$data_nasc', '1')";
 
 if($pdo->exec($sqlInsert)){
-    header("Location: ../index.php?sucesso=1");
+    header("Location: /php-3info25/views/view_cadastro_aluno.php?sucesso=1");
 }else{
-    header("Location: ../index.php?sucesso=0");
+    header("Location: /php-3info25/views/view_cadastro_aluno.php?sucesso=0");
 }
 

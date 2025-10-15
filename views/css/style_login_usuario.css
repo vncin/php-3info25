@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: gainsboro;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3%;
+    background-color: white;
+    border-radius: 7px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.357) 0px 0px 5px 10px;
+}
+.principal-form{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 120%;
+    justify-content: space-between;
+}
+.login-input{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+label{
+    font-weight: bold;
+}
+input{
+    padding: 2%;
+    border-radius: 7px;
+    border: 1px solid gray;
+    transition: all 0.1s ease-in-out;
+}
+input:focus{
+    box-shadow: rgb(201, 237, 245)  0px 0px 5px 5px;
+    border: 1px solid gray;
+}
+.btn-login{
+    display: flex;
+    width: 50%;
+    align-self: center;
+    border-radius: 7px;
+    background-color: rgb(148, 245, 4);
+    font-weight: 700;
+    border: 1px solid rgb(1, 155, 52);
+    transition: all 0.1s ease-in-out;
+    margin-block: 2%;
+}
+.btn-login:hover{
+    box-shadow: rgb(161, 250, 29) 0px 0px 5px 5px;
+    
+}
