@@ -87,6 +87,20 @@ input[type="text"], input[type="date"]{
     font-size: 25pt;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.btn-sair{
+    height: 5vh;
+    background-color: rgb(231, 50, 37);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 10%;
+    align-self: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
 @keyframes ocultarApos3s {
   from { /* O estado inicial da animação */
     opacity: 1; /* O elemento está totalmente visível */

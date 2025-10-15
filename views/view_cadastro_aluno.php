@@ -13,6 +13,7 @@
             session_start();
             echo "<h2>".$_SESSION['nome_usuario']."</h2>";        
         ?>
+        <a href="/php-3info25/controllers/controller_logout.php" class="btn-sair">Sair</a>
         <form action="/php-3info25/controllers/controller_cadastra_aluno.php" method="POST" class="principal-form">
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome" required>
