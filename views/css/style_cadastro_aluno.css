@@ -13,6 +13,12 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+.principal-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 1% 1%;
+}
 .principal-form{
     display: flex;
     flex-direction: column;
@@ -23,7 +29,7 @@ body{
     border: 1px solid rgb(220, 220, 220);
     padding: 4%;
     border-radius: 10px;
-    margin: 5% auto;
+    margin: 2% auto;
 }
 .btn-enviar{
     height: 5vh;
@@ -88,13 +94,13 @@ input[type="text"], input[type="date"]{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .btn-sair{
-    height: 5vh;
+    height: 2vh;
     background-color: rgb(231, 50, 37);
     border: none;
     border-radius: 10px;
     font-weight: 600;
-    width: 10%;
-    align-self: center;
+    width: 8%;
+    padding: 1%;
     text-decoration: none;
     display: flex;
     justify-content: center;

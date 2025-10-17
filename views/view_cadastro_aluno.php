@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if(!isset($_SESSION['nome_usuario'])){
+    header("Location: /php-3info25/index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,11 +16,13 @@
 
 <body>
     <section class="principal">
-        <?php 
-            session_start();
-            echo "<h2>".$_SESSION['nome_usuario']."</h2>";        
-        ?>
-        <a href="/php-3info25/controllers/controller_logout.php" class="btn-sair">Sair</a>
+        <nav class="principal-nav">
+                <?php 
+                    echo "<h2> Bem-vindo ".$_SESSION['nome_usuario']."</h2>";        
+                ?>
+                <a href="/php-3info25/controllers/controller_logout.php" class="btn-sair">Sair</a>  
+        </nav>
+        
         <form action="/php-3info25/controllers/controller_cadastra_aluno.php" method="POST" class="principal-form">
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome" required>
