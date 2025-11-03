@@ -2,6 +2,7 @@
 session_start();
 if(!isset($_SESSION['nome_usuario'])){
     header("Location: /php-3info25/index.php");
+    //verificando se existe sessão criada!
 }
 ?>
 

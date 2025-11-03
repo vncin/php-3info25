@@ -1,6 +1,6 @@
 <?php
 
-require "../config/db_connect.php";
+require "../config/db_connect.php"; //arquivo de conexão com o banco de dados
 
 $nome = $_POST['nome'];
 $data_nasc = $_POST['data_nasc'];

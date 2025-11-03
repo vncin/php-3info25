@@ -11,11 +11,11 @@
     <form action="/php-3info25/controllers/controller_login_usuario.php" method="POST" class="principal-form">
         <div class="login-input">
             <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="" placeholder="CPF">
+            <input type="text" name="cpf" id="" placeholder="CPF" required>
         </div>
         <div class="login-input">
             <label for="senha">Senha</label>
-            <input type="password" name="senha" id="" placeholder="Senha">
+            <input type="password" name="senha" id="" placeholder="Senha" required>
         </div>
         <input type="submit" class="btn-login" value="Login">
     </form>

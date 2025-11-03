@@ -11,7 +11,7 @@ $verificaUsuario = $pdo->query($sqlVerificaUsuario);
 $result = $verificaUsuario->fetch(PDO::FETCH_ASSOC);
 
 if($result){
-    session_start();
+    session_start(); //iniciando uma sessão PHP
     $_SESSION['nome_usuario'] = $result['nome'];
     header("Location: ../views/view_cadastro_aluno.php");
 }else{
