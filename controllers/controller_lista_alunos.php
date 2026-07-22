@@ -9,3 +9,5 @@ $result = $pdo->query($selecionaAlunos);
 $resultListaAlunos = $result->fetchAll(PDO::FETCH_ASSOC);
 
 include_once('../views/view_lista_alunos.php');
+
+//modificação no lista alunos
