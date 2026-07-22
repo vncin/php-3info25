@@ -16,6 +16,7 @@ if($result){
     header("Location: ../views/view_cadastro_aluno.php");
 }else{
     header("Location: ../views/view_login.php");
+    //comentarioa aqui pra testar a branch backend
 }
 
 
